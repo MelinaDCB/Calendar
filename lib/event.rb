@@ -1,5 +1,4 @@
-require 'pry'
-require 'time'
+
 
 class Event
     attr_accessor :start_date, :duration, :title, :attendees
@@ -46,6 +45,14 @@ class Event
             puts "It's starting soon !"
         end
     end
+
+    def to_s
+        puts "> Titre : #{title} "
+        puts "> Date de début : #{start_date.strftime('%m/%d/%Y %H:%M %p')} "
+        puts "> Durée : #{duration} minutes "
+        print "> Invités : #{attendees.join(', ')}."
+
+    end
 end
 
-binding.pry
+#binding.pry
