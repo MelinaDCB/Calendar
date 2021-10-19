@@ -83,4 +83,3 @@ class WorkEvent < Event
     end
 end
 
-#binding.pry
